@@ -508,7 +508,7 @@ export default function App() {
 
       >
 
-        <div className="mx-auto w-full max-w-none px-2 md:px-[40px] h-[64px] flex items-center justify-between">
+        <div className="mx-auto w-full max-w-none px-4 md:px-[40px] h-[64px] flex items-center justify-between">
 
           <div className="flex items-center gap-8">
 
@@ -567,11 +567,11 @@ export default function App() {
 
 
 
-      <section className="relative z-10 mx-auto w-full max-w-none px-2 md:px-[40px] pt-10 md:pt-20 pb-12 md:pb-16 grid md:grid-cols-[1.1fr_0.9fr] gap-8 md:gap-12 items-center">
+      <section className="relative z-10 mx-auto w-full max-w-none px-4 md:px-[40px] pt-10 md:pt-20 pb-12 md:pb-16 grid md:grid-cols-[1.1fr_0.9fr] gap-8 md:gap-12 items-center">
 
         <div>
 
-          <div className={`inline-flex items-center gap-2 text-[11px] tracking-[0.18em] uppercase border rounded-full px-3 py-1.5 shadow-sm ${isDark ? "border-[#2a2a2a] bg-[#151515] text-[#f5f5f0]" : "border-[#e5e5e3] bg-white text-[#111111]"}`}>
+          <div className={`inline-flex max-w-full items-center gap-2 text-[9px] sm:text-[11px] tracking-[0.12em] sm:tracking-[0.18em] uppercase border rounded-full px-2.5 sm:px-3 py-1.5 shadow-sm whitespace-nowrap ${isDark ? "border-[#2a2a2a] bg-[#151515] text-[#f5f5f0]" : "border-[#e5e5e3] bg-white text-[#111111]"}`}>
 
             <span className="w-2 h-2 rounded-full bg-[#00d26a] animate-pulse" />
 
@@ -579,7 +579,7 @@ export default function App() {
 
           </div>
 
-          <h1 className="font-display font-[800] leading-[0.9] tracking-[-0.04em] text-[42px] md:text-[72px] mt-6">
+          <h1 className="font-display font-[800] leading-[0.9] tracking-[-0.04em] text-[40px] sm:text-[42px] md:text-[72px] mt-6">
 
             Hi, I'm
 
@@ -589,13 +589,13 @@ export default function App() {
 
           </h1>
 
-          <p className={`mt-6 max-w-[520px] text-[15px] leading-[1.7] ${isDark ? "text-[#9a9a96]" : "text-[#6a6863]"}`}>
+          <p className={`mt-6 max-w-[520px] text-[13px] sm:text-[15px] leading-[1.7] ${isDark ? "text-[#9a9a96]" : "text-[#6a6863]"}`}>
 
             Python, Full-Stack & AI Developer. I build clean, modern and user-friendly web applications using Python, Flask, Next.js, TypeScript and <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full border text-[11px] font-medium tracking-wide ml-1 ${isDark ? "bg-white/10 border-white/15 text-[#f5f5f0]" : "bg-[#f1f1ef] border-black/10 text-[#4a4844]"}`}>AI-powered technologies</span>.
 
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-wrap items-center gap-2.5 sm:gap-3">
 
             <a href="#work" className={`h-[46px] px-6 rounded-full font-medium text-[13px] tracking-wide inline-flex items-center gap-2 hover:opacity-90 transition shadow-sm ${isDark ? "bg-white text-black" : "bg-[#111] text-white"}`}>
 
@@ -621,7 +621,7 @@ export default function App() {
 
           </div>
 
-          <div className={`mt-10 pt-8 border-t flex gap-10 ${isDark ? "border-white/10" : "border-black/5"}`}>
+          <div className={`mt-10 pt-8 border-t grid grid-cols-3 gap-3 sm:flex sm:gap-10 ${isDark ? "border-white/10" : "border-black/5"}`}>
 
             <div><div className="font-display font-bold text-[28px] leading-none">8+</div><div className="text-[11px] uppercase tracking-wide opacity-60 mt-1">Projects</div></div>
 
@@ -633,7 +633,7 @@ export default function App() {
 
         </div>
 
-        <div className="relative mx-auto md:ml-auto w-full max-w-[440px]">
+        <div className="relative mx-auto md:ml-auto w-full max-w-[calc(100vw-32px)] sm:max-w-[440px]">
 
           <div className={`relative rounded-[20px] border shadow-[0_20px_60px_rgba(0,0,0,0.08)] overflow-hidden ${isDark ? "border-[#2a2a2a] bg-[#151515] text-[#f5f5f0]" : "border-[#e5e5e3] bg-white text-[#111111]"}`}>
 
@@ -647,7 +647,7 @@ export default function App() {
 
             </div>
 
-            <div className="p-6 font-mono text-[12px] leading-[1.7]">
+            <div className="p-4 sm:p-6 font-mono text-[10px] sm:text-[12px] leading-[1.7] overflow-hidden">
 
               <div className="opacity-40"># building things that solve real problems</div>
 
@@ -673,7 +673,7 @@ export default function App() {
 
           </div>
 
-          <div className="absolute -top-4 -left-4 md:-top-6 md:-left-6 z-20">
+          <div className="absolute -top-4 left-2 md:-top-6 md:-left-6 z-20">
 
             <div className="relative w-[72px] h-[72px] md:w-[80px] md:h-[80px] rounded-full border-[4px] border-[#d6ff57] shadow-[0_8px_24px_rgba(0,0,0,0.15)] overflow-hidden bg-[#222]">
 
@@ -687,19 +687,19 @@ export default function App() {
 
           </div>
 
-          <div className={`absolute -right-2 md:-right-4 top-[12%] z-20 rounded-full px-3 py-1.5 border shadow-[0_8px_20px_rgba(0,0,0,0.12)] flex items-center gap-2 text-[11px] font-bold ${isDark ? "border-white/10 bg-white text-black" : "border-black/10 bg-black text-white"}`}>
+          <div className={`absolute right-2 md:-right-4 top-[12%] z-20 rounded-full px-2.5 sm:px-3 py-1.5 border shadow-[0_8px_20px_rgba(0,0,0,0.12)] flex items-center gap-2 text-[9px] sm:text-[11px] font-bold whitespace-nowrap ${isDark ? "border-white/10 bg-white text-black" : "border-black/10 bg-black text-white"}`}>
 
             <span className={`w-5 h-5 rounded-full grid place-items-center text-[9px] ${isDark ? "bg-black text-white" : "bg-white text-black"}`}>PY</span> Python Expert
 
           </div>
 
-          <div className={`absolute -left-2 md:-left-6 top-[48%] z-20 rounded-full px-3 py-1.5 border shadow-[0_8px_20px_rgba(0,0,0,0.12)] flex items-center gap-2 text-[11px] font-bold ${"bg-[#d6ff57] text-black border-black/10"}`}>
+          <div className={`absolute left-2 md:-left-6 top-[48%] z-20 rounded-full px-2.5 sm:px-3 py-1.5 border shadow-[0_8px_20px_rgba(0,0,0,0.12)] flex items-center gap-2 text-[9px] sm:text-[11px] font-bold whitespace-nowrap ${"bg-[#d6ff57] text-black border-black/10"}`}>
 
             <span className="w-2 h-2 rounded-full bg-[#00d26a] animate-pulse" /> AI Integration Live
 
           </div>
 
-          <div className={`absolute -right-1 md:-right-2 bottom-[12%] z-20 rounded-full px-3 py-1.5 border shadow-[0_8px_20px_rgba(0,0,0,0.12)] text-[10px] font-bold tracking-wide ${isDark ? "bg-white text-black border-black/10" : "bg-[#111] text-white border-white/10"}`}>
+          <div className={`absolute right-2 md:-right-2 bottom-[12%] z-20 rounded-full px-2.5 sm:px-3 py-1.5 border shadow-[0_8px_20px_rgba(0,0,0,0.12)] text-[9px] sm:text-[10px] font-bold tracking-wide whitespace-nowrap ${isDark ? "bg-white text-black border-black/10" : "bg-[#111] text-white border-white/10"}`}>
 
             TS • Next.js • RAG
 
@@ -717,7 +717,7 @@ export default function App() {
 
           <div className={`border-y ${border} ${isDark ? "bg-[#0f0f0f]" : "bg-[#f4f1eb]"} `}>
 
-            <div className="mx-auto w-full max-w-none px-2 md:px-[40px] py-6 md:py-7 flex flex-wrap items-start justify-between gap-6">
+            <div className="mx-auto w-full max-w-none px-4 md:px-[40px] py-6 md:py-7 flex flex-wrap items-start justify-between gap-6">
 
               <div>
 
@@ -781,7 +781,7 @@ export default function App() {
 
             </div>
 
-            <div className="mx-auto w-full max-w-none px-2 md:px-[40px] py-2 flex items-center justify-between text-[10px] tracking-widest uppercase">
+            <div className="mx-auto w-full max-w-none px-4 md:px-[40px] py-2 flex items-center justify-between text-[10px] tracking-widest uppercase">
 
               <span className={muted}>{String(Math.round(progress * 100)).padStart(2, "0")}% • {Math.round(x)}px</span>
 
@@ -795,7 +795,7 @@ export default function App() {
 
           <div className="flex-1 relative overflow-hidden flex items-center">
 
-            <div ref={trackRef} className="flex gap-6 px-2 md:px-[40px] will-change-transform" style={{ transform: `translateX(${-x}px)`, transition: "transform 0.15s linear" }}>
+            <div ref={trackRef} className="flex gap-6 px-4 md:px-[40px] will-change-transform" style={{ transform: `translateX(${-x}px)`, transition: "transform 0.15s linear" }}>
 
               {filtered.map((p) => (
 
@@ -803,7 +803,7 @@ export default function App() {
 
                   key={p.id}
 
-                  className={`group shrink-0 w-[340px] md:w-[400px] h-[440px] rounded-[24px] border ${cardBorder} ${cardBg} overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] transition-all duration-300`}
+                  className={`group shrink-0 w-[calc(100vw-32px)] max-w-[340px] md:w-[400px] md:max-w-none h-[440px] rounded-[24px] border ${cardBorder} ${cardBg} overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] transition-all duration-300`}
 
                 >
 
@@ -911,7 +911,7 @@ export default function App() {
 
       <section id="skills" className="relative z-10 border-t border-b mt-0">
 
-        <div className="mx-auto w-full max-w-none px-2 md:px-[40px] py-16 md:py-24">
+        <div className="mx-auto w-full max-w-none px-4 md:px-[40px] py-16 md:py-24">
 
           <div className="flex items-baseline gap-4">
 
@@ -947,7 +947,7 @@ export default function App() {
 
       <section id="about" className={`relative z-10 ${isDark ? "bg-[#0f0f0f]" : "bg-[#f6f2eb]"} border-b ${border}`}>
 
-        <div className="mx-auto w-full max-w-none px-2 md:px-[40px] py-16 md:py-24 grid md:grid-cols-[0.9fr_1.1fr] gap-10">
+        <div className="mx-auto w-full max-w-none px-4 md:px-[40px] py-16 md:py-24 grid md:grid-cols-[0.9fr_1.1fr] gap-10">
 
           <div>
 
@@ -1017,7 +1017,7 @@ export default function App() {
 
       <section id="education" className="relative z-10 border-b">
 
-        <div className="mx-auto w-full max-w-none px-2 md:px-[40px] py-16 md:py-24">
+        <div className="mx-auto w-full max-w-none px-4 md:px-[40px] py-16 md:py-24">
 
           <div className="flex items-baseline gap-4">
 
@@ -1077,9 +1077,9 @@ export default function App() {
 
       <section id="contact" className="relative z-10">
 
-        <div className="mx-auto w-full max-w-none px-2 md:px-[40px] py-16 md:py-28">
+        <div className="mx-auto w-full max-w-none px-4 md:px-[40px] py-16 md:py-28">
 
-          <div className={`rounded-[28px] border ${cardBorder} ${isDark ? "bg-[#121212]" : "bg-[#111] text-[#f7f5f0]"} p-8 md:p-14 flex flex-col md:flex-row justify-between gap-10`}>
+          <div className={`rounded-[28px] border ${cardBorder} ${isDark ? "bg-[#121212]" : "bg-[#111] text-[#f7f5f0]"} p-6 sm:p-8 md:p-14 flex flex-col md:flex-row justify-between gap-10 min-w-0`}>
 
             <div className="max-w-[520px]">
 
@@ -1097,7 +1097,7 @@ export default function App() {
 
               <p className="mt-5 text-[14px] leading-[1.7] opacity-70">Let&apos;s build something great together.</p>
 
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="mt-8 flex flex-wrap items-center gap-2.5 sm:gap-3">
 
                 <a href="mailto:moiz29943@email.com" className="h-[46px] px-6 rounded-full bg-[#d6ff57] text-black font-bold text-[13px] inline-flex items-center gap-2 hover:opacity-90 transition">
 
