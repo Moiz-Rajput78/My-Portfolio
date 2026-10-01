@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="google-site-verification" content="r36rYxyo3nx4BhTLJvHMRibDzy7daV87gXpJAklfkB4" />
+        <meta name="google-site-verification" content="RCPQT5GJWFW33NAHgODn5FuV-Wg6ES-7qQwrQgKA_2s" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Syne:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
